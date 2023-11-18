@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-container" id="signupform">
+            <h1>Sign Up</h1>
+            <label>Username</label>
+            <input type="text" id="signupusername" name="signupusername" required>
+            <label for="new-password">Password</label>
+            <input type="password" id="signupPassword" name="new-password" required>
+            <button type="submit" onclick="signupdata()">Sign Up</button>
+        </div>
+
+
+
+        <div class="form-container" id="loginform" style="display: none;">
+            <h1>Login</h1>
+            <label for="username">Username</label>
+            <input type="text" id="loginName" name="username" required>
+            <label for="password">Password</label>
+            <input type="password" id="loginPassword" name="password" required>
+            <button type="submit" onclick="logindata()">Login</button>
+        </div>
+
+
+    </div>
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="app.js"></script>
+</body>
+
+</html>
