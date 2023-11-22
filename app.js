@@ -71,15 +71,20 @@ function logindata(){
  if(loginName.value === userparse &&  loginPassword.value === passwordparse){
   Swal.fire({
     icon: "success",
-    title: "Log In Sucessfully",
+    title: `${loginName.value + "Log In Sucessfully"}` ,
 });
 
+setTimeout(function () { window.location.href = "./main.html" }, 1000)
 
  }
 
+
 }
 
+function logout(){
+  setTimeout(function () {window.location.href = "./index.html"},1000)
 
+}
 
 
 

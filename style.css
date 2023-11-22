@@ -4,7 +4,7 @@
     padding: 0;
   }
 
-  body {
+  .mainpage {
     font-family: 'Open Sans', sans-serif;
     background-color: #222;
   }
@@ -40,6 +40,7 @@
   }
 
   input {
+    width: 100%;
     padding: 12px;
     border: none;
     border-radius: 5px;
@@ -79,3 +80,20 @@
     text-align: center;
     margin: 8px;
   }
+  .navbar{
+    background-color: rgb(12, 158, 158) !important;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .btn{
+    color: #222;
+    background-color: rgb(238, 88, 88) !important;
+  }
+.first{
+  margin-top: 80px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  background-color: rgb(12, 158, 158) ;
+  border: 1px solid black;
+  height: 70px;
+  width: 100%;
+
+}
