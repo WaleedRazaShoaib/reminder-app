@@ -1,9 +1,13 @@
+// =======================ALL IDS GET =========================
+
 var loginName = document.getElementById("loginName");
 var loginPassword = document.getElementById("loginPassword");
 var loginform = document.getElementById("loginform");
 var signupusername = document.getElementById("signupusername");
 var signupPassword = document.getElementById("signupPassword");
 var signupform = document.getElementById("signupform");
+
+// =============== WORK FOR SIGN-UP FUNCTION ==================== 
 
 function signupdata(){
 if(signupusername.value.trim() === ""){
@@ -43,7 +47,7 @@ loginform.style.display ="flex";
  
 
 }
-
+// =============================== WORK FOR LOG-IN DATA ======================== 
 
 function logindata(){
   var userparse = JSON.parse(localStorage.getItem("username"));
@@ -81,6 +85,7 @@ setTimeout(function () { window.location.href = "./main.html" }, 1000)
 
 }
 
+// ========================= LOGOUT FUNCTION WORK ===================
 function logout(){
   setTimeout(function () {window.location.href = "./index.html"},1000)
 

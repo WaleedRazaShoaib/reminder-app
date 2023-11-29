@@ -5,29 +5,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <!--========================== BOOTSRAP LINKS ========================-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
         crossorigin="anonymous"></script>
+
+    <!-- ================CSS FILE LINK================= -->
     <link rel="stylesheet" href="style.css">
 
 </head>
 
 <body>
-
+    <!-- ===============style for background================ -->
+    <style>
+        body {
+            background-image: url(images/background\ logo\ 2.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+            background-size: 100% 100%;
+        }
+    </style>
+    <!-- ========================BOOTSTRAP NAVBAR============== -->
     <nav class="navbar bg-body-tertiary">
         <div class="container-fluid">
-            <a class="navbar-brand">Reminder App</a>
+            <div>
+                <img src="images/background logo 1.jpg" id="toppic">
+                <a class="navbar-brand" style="color: white;"> Namaz Reminder App </a>
+            </div>
             <button class="btn btn-outline-success" type="submit" onclick="logout()">LOG OUT</button>
         </div>
     </nav>
+    <!-- ===========================MY MAIN HTML WORK============================== -->
 
 
-    <button onclick="task()" class="task">My task</button>
-    <div class="first">
+    <div class="onet">
+        <div class="one">
+            <button class="task" onclick="mytask()">My task</button>
+        </div>
+        <div class="two">
+            <button onclick="currenttime()" class="task">Current Time</button>
+        </div>
+    </div>
+    <!--=========================Current watch============ -->
+    <div id="timeshow">
+
+    </div>
 
 
+
+    <div class="tasks" id="tasks">
+        <input type="datetime-local" class="feild1" id="datettime">
+        <input type="text" class="feild1" id="description" placeholder="description">
+        <button class="save" id="done">DONE</button>
+    </div>
+    <div id="taskkadiv">
+
+    </div>
+
+    <div id="full">
+        <!-- ================================div 1 fajar======================== -->
+        <div class="first">
+            <div class="picone">
+                <img src="images/logo 1.jfif" class="pic1">
+            </div>
+            <div class="h2">
+                <h3> FAJAR</h3>
+            </div>
+            <h5 class="h5">1:00:PM</h5>
+
+        </div>
+
+        <!-- ================================div 2 zuher======================== -->
+
+        <div class="second">
+            <div class="picone">
+                <img src="images/logo 2.jfif" class="pic1">
+            </div>
+            <div class="h2">
+                <h3> ZUHER</h3>
+            </div>
+            <h5 class="h5">1:00:PM</h5>
+        </div>
+
+        <!-- ================================div 3 Asar======================== -->
+
+        <div class="third">
+            <div class="picone">
+                <img src="images/logo 3.jfif" class="pic1">
+            </div>
+            <div class="h2">
+                <h3> ASAR </h3>
+            </div>
+            <h5 class="h5">1:00:PM</h5>
+
+        </div>
+
+        <!-- ================================div 4 Maghrib======================== -->
+
+        <div class="four">
+            <div class="picone">
+                <img src="images/logo 4.jfif" class="pic1">
+            </div>
+            <div class="h2">
+                <h3> MAGHRIB </h3>
+            </div>
+            <h5 class="h5">1:00:PM</h5>
+
+        </div>
+
+        <!-- ================================div 5 Isha======================== -->
+
+        <div class="five">
+            <div class="picone">
+                <img src="images/logo 5.jfif" class="pic1">
+            </div>
+            <div class="h2">
+                <h3> ISHAA</h3>
+            </div>
+            <h5 class="h5">1:00:PM</h5>
+
+        </div>
     </div>
 
 
@@ -40,11 +140,7 @@
 
 
 
-
-
-
-
-
+    <!-- ============================ script tags ====================== -->
     <script src="app.js"></script>
     <script src="main.js"></script>
 </body>
