@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <!--========================== BOOTSRAP LINKS ========================-->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"  
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
@@ -17,7 +17,7 @@
 
 </head>
 
-<body>
+<body class="body">
     <!-- ===============style for background================ -->
     <style>
         body {
@@ -33,7 +33,7 @@
         <div class="container-fluid">
             <div>
                 <img src="images/background logo 1.jpg" id="toppic">
-                <a class="navbar-brand" style="color: white;"> Namaz Reminder App </a>
+                <a class="navbar-brand" style="color: white;"> Namaz Reminder</a>
             </div>
             <button class="btn btn-outline-success" type="submit" onclick="logout()">LOG OUT</button>
         </div>
@@ -43,10 +43,13 @@
 
     <div class="onet">
         <div class="one">
-            <button class="task" onclick="mytask()">My task</button>
+            <button class="task" onclick="mytask()">MY TASK</button>
         </div>
         <div class="two">
-            <button onclick="currenttime()" class="task">Current Time</button>
+            <button onclick="currenttime()" class="task">CURRENT TIME</button>
+        </div>
+        <div class="two">
+            <button onclick="namazdiv()" class="task">NAMAZ TIME</button>
         </div>
     </div>
     <!--=========================Current watch============ -->
@@ -55,8 +58,7 @@
     </div>
 
 
-
-    <div class="tasks" id="tasks">
+    <div class="tasks" id="tasks" >
         <input type="datetime-local" class="feild1" id="datettime">
         <input type="text" class="feild1" id="description" placeholder="description">
         <button class="save" id="done">DONE</button>
@@ -74,7 +76,7 @@
             <div class="h2">
                 <h3> FAJAR</h3>
             </div>
-            <h5 class="h5">1:00:PM</h5>
+            <h5 class="h5">6:00:AM</h5>
 
         </div>
 
@@ -87,7 +89,7 @@
             <div class="h2">
                 <h3> ZUHER</h3>
             </div>
-            <h5 class="h5">1:00:PM</h5>
+            <h5 class="h5">12:30:PM</h5>
         </div>
 
         <!-- ================================div 3 Asar======================== -->
@@ -99,7 +101,7 @@
             <div class="h2">
                 <h3> ASAR </h3>
             </div>
-            <h5 class="h5">1:00:PM</h5>
+            <h5 class="h5">4:30:PM</h5>
 
         </div>
 
@@ -112,7 +114,7 @@
             <div class="h2">
                 <h3> MAGHRIB </h3>
             </div>
-            <h5 class="h5">1:00:PM</h5>
+            <h5 class="h5">5:45:PM</h5>
 
         </div>
 
@@ -125,7 +127,7 @@
             <div class="h2">
                 <h3> ISHAA</h3>
             </div>
-            <h5 class="h5">1:00:PM</h5>
+            <h5 class="h5">7:15:PM</h5>
 
         </div>
     </div>

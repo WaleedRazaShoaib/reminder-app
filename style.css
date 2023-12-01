@@ -101,7 +101,6 @@ height: 40px;
 .save{
   width: 10%;
 margin-top: 1%;
-/* padding: 10px; */
   background-color: #ACD4D5;
   color: #fff;
   border: none;
@@ -150,7 +149,15 @@ margin-top: 1%;
   font-size: 18px;
   transition: background-color 0.2s ease-in-out;
 }
-
+.h2 {
+  color: #093879;
+  padding-top: 15px;
+}
+.h5 {
+  color: hsl(215, 86%, 25%);
+  padding-top: 25px;
+  padding-right: 15px;
+}
 .first {
   display: flex;
   flex-direction: row;
@@ -161,20 +168,9 @@ margin-top: 1%;
   height: 80px;
   width: 80%;
   margin-left: 10%;
+  justify-content: space-between;
   border-radius: 15px;
 }
-
-.h2 {
-  padding-left: 20%;
-  color: #fff;
-  padding-top: 15px;
-}
-
-.h5 {
-  text-align: end;
-  padding-left: 20%;
-}
-
 .second {
   display: flex;
   flex-direction: row;
@@ -186,6 +182,7 @@ margin-top: 1%;
   width: 80%;
   margin-left: 10%;
   border-radius: 15px;
+  justify-content: space-between;
 }
 
 .third {
@@ -199,6 +196,8 @@ margin-top: 1%;
   width: 80%;
   margin-left: 10%;
   border-radius: 15px;
+  justify-content: space-between;
+
 }
 
 .four {
@@ -211,6 +210,7 @@ margin-top: 1%;
   height: 80px;
   width: 80%;
   margin-left: 10%;
+  justify-content: space-between;
   border-radius: 15px;
 }
 
@@ -218,6 +218,7 @@ margin-top: 1%;
   border-radius: 15px;
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
   margin-top: 10px;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
   background-color: #ACD4D5;
@@ -231,7 +232,6 @@ margin-top: 1%;
 .picone {
   margin: 10px 0px 0px 10px;
   width: 70px;
-  /* border: solid 1px black; */
   border-top-right-radius: 30px;
   border-top-left-radius: 30px;
   border-bottom-right-radius: 30px;
@@ -246,16 +246,27 @@ margin-top: 1%;
   height: 60px;
   width: 60px;
 }
-@media  only screen and (max-width:765px) {
+@media  only screen and (max-width:350px) {
+  
   .full{
       display: flex;
       justify-content: space-around;
       flex-wrap: nowrap;
       flex-direction: column;
       align-items: center;
+      width: auto;
    }
-   
+   .one,.two{
+    padding: 10px 5px 0px 0px ;
+   }
+   .onet{
+    padding-top: 10px;
+       align-items: center;
+       width: 100%;
+   }
+
    .tasks{
+    display: flex;
     flex-direction: column;
        align-items: center;
        width: 100%;
@@ -268,14 +279,4 @@ margin-top: 1%;
        margin-top: 10px;
        width: 100px;
     }
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  }
+}
