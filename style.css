@@ -90,6 +90,14 @@ p {
   justify-content: space-evenly;
 }
 
+.tasks2{
+  margin-top: 5%;
+    display:block;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
 .feild1{
   margin-top: 1%;
   padding: 5px;
@@ -246,6 +254,20 @@ margin-top: 1%;
   height: 60px;
   width: 60px;
 }
+.timeshow1{
+  margin-top: 5%;
+    font-size : 50px;
+    color: #fff;
+    text-align: center;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    background-color: #ACD4D5;
+    border: solid white;
+    border-radius: 15px;
+    height: auto;
+    width: 80%;
+    margin-left: 10%;
+}
+
 @media  only screen and (max-width:350px) {
   
   .full{

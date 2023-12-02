@@ -6,51 +6,37 @@ let description = document.getElementById("description");
 let taskkadiv = document.getElementById("taskkadiv");
 let done = document.getElementById("done")
 let day = new Date().toDateString();
+
+
+// ========================== GLOBALY===========================
+function displayClock() {
+    var display = new Date().toLocaleTimeString();
+    console.log(display)
+    setTimeout(displayClock, 1000);
+}
+
+
 function currenttime() {
     displayClock();
     function displayClock() {
         var display = new Date().toLocaleTimeString();
+        console.log(display)
         timeshow.innerHTML = `${display}<br>${day} `;
         setTimeout(displayClock, 1000);
-        return;
     }
     fulldiv.style.display = "none";
-    timeshow.style = `margin-top: 5%;
-    font-size : 50px;
-    color: #fff;
-    text-align: center;
-    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
-    background-color: #ACD4D5;
-    border: solid white;
-    border-radius: 15px;
-    height: auto;
-    width: 80%;
-    margin-left: 10%;`
+timeshow.classList.add("timeshow1")
     tasks.style.display = "none"
 }
 
-let interval = false;
-let currentDateGetMilliSec;
-let alarmDateGetMillsec;
-
 function mytask() {
     fulldiv.style.display = "none";
-    tasks.style.display = ` margin-top: 5%;
-    display:block;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-evenly;
-  `
+    tasks.style.display ="flex";
+   tasks.classList.add("tasks1")
 }
+
+
 done.addEventListener("click", function () {
-    //     interval = true;
-    //     var alarmDate = new Date(datetime.value);
-    //     alarmDateGetMillsec = Math.round(alarmDate.getTime() / 1000)
-    //     // var equal = currentDateGetMilliSec - alarmDateGetMillsec;
-    //     // console.log(equal)
-    //     console.log("")
-    //     console.log(description.value)
-    //     console.log(datetime.value)
     taskkadiv.innerHTML += `
     <div class="first" style ="height:auto;">
     <h3 style ="color:#fff; padding-left: 10px;">${description.value} , ${datetime.value.slice(0, 10)}</h3>
@@ -68,3 +54,13 @@ function namazdiv() {
     tasks.style.display = "none";
     timeshow.style.display = "none";
 }
+
+setInterval(()=>{
+    var dates = new Date();
+  alarmDateGetMillsec = Math.round(dates.getTime() / 1000)
+  console.log(alarmDateGetMillsec)
+if(datetime.value === alarmDateGetMillsec){
+    alert("done")
+}
+   
+},1000)
