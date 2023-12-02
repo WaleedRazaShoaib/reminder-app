@@ -57,10 +57,11 @@ function namazdiv() {
 
 setInterval(()=>{
     var dates = new Date();
-  alarmDateGetMillsec = Math.round(dates.getTime() / 1000)
+    var milli = new Date().getMilliseconds()
+  alarmDateGetMillsec = Math.round((milli / 1000) )
   console.log(alarmDateGetMillsec)
-if(datetime.value === alarmDateGetMillsec){
-    alert("done")
-}
+  if(datetime.value === alarmDateGetMillsec){
+alert("done")
+  }
    
 },1000)
