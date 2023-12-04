@@ -37,11 +37,19 @@ function mytask() {
 
 
 done.addEventListener("click", function () {
-    taskkadiv.innerHTML += `
+if  (description.value === "" && datetime.value === ""){
+    alert("plzz add task")
+
+}
+else {
+     taskkadiv.innerHTML += `
     <div class="first" style ="height:auto;">
     <h3 style ="color:#fff; padding-left: 10px;">${description.value} , ${datetime.value.slice(0, 10)}</h3>
   <h3 style ="color:#fff;  padding-left: 70px; ">${datetime.value.slice(11)}</h3>
             </div>`
+        }
+
+   
     fulldiv.style.display = "none";
     description.value = "";
     datetime.value = "";
@@ -55,13 +63,15 @@ function namazdiv() {
     timeshow.style.display = "none";
 }
 
-setInterval(()=>{
-    var dates = new Date();
-    var milli = new Date().getMilliseconds()
-  alarmDateGetMillsec = Math.round((milli / 1000) )
-  console.log(alarmDateGetMillsec)
-  if(datetime.value === alarmDateGetMillsec){
-alert("done")
-  }
+// setInterval(()=>{
+//     var dates = new Date();
+//     var milli = new Date().getMilliseconds()
+//   alarmDateGetMillsec = Math.round((milli / 1000) )
+//   console.log(alarmDateGetMillsec)
+//   if(datetime.value === alarmDateGetMillsec && new Date().getMinutes() && new Date().getDate() ){
+// alert("done")
+//   }
    
-},1000)
+// },1000)
+
+
